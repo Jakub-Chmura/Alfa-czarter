@@ -8,6 +8,13 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+}
 
 .header {
     height: 120px;
@@ -28,11 +35,13 @@ html {
 
 @media(max-width: 500px) {
     .header {
-        height: 90px;
+        height: 80px;
     }
+}
 
+@media (max-width: 500px) {
     .logo {
-        height: 60px;
+        height: 45px;
         margin-left: 20px;
     }
 }
@@ -117,6 +126,12 @@ html {
     }
 }
 
+@media (max-width: 500px) {
+    .main-navigation__mobile-button-img {
+        width: 20px;
+    }
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -145,23 +160,23 @@ html {
     }
 }
 
-@media (max-width: 445px) {
+@media (max-width: 500px) {
     .banner{
-        height: 200px;
+        height: 150px;
     }
 
     .banner-image {
-        height: 200px;
+        height: 150px;
     }
 }
 
-@media (max-width: 350px) {
-    .banner {
-        height: 180px;
+@media (max-width: 370px) {
+    .banner{
+        height: 130px;
     }
 
     .banner-image {
-        height: 180px;
+        height: 130px;
     }
 }
 
@@ -222,10 +237,44 @@ html {
     margin-top: 30px;
 }
 
-.table {
+table {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-collapse: collapse;
+    text-align: center;
+    overflow-x: auto
+}
+
+table th {
+    background: #ff722cd0;
+}
+
+table th , td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table tr:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    table {
+        font-size: smaller;
+    }
+}
+
+.footer {
+    font-size: 15px;
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+    .footer {
+        font-size: 10px;
+    }
 }
 
 .footer-link {
