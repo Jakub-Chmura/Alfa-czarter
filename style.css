@@ -1,5 +1,9 @@
-* , ::before , ::after {
+html {
     box-sizing: border-box;
+}
+
+* , ::before , ::after {
+    box-sizing: inherit;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
 }
@@ -192,6 +196,10 @@
     padding-bottom: 10px;
 }
 
+.solina:last-child {
+    border-bottom: none;
+}
+
 .section-header {
     text-align: center;
 }
@@ -202,4 +210,30 @@
     display: flex;
     justify-content: center;
     margin: 20px auto 40px;
+}
+
+.footer {
+    height: 50px;
+    background: #ccc;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-link:hover {
+    border-bottom: 1px solid #ff722c;
 }
